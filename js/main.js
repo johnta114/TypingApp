@@ -19,14 +19,16 @@
     let isPlaying = false;
     const target = document.querySelector('#target');
 
-    document.addEventListener('click',()=>{
+    document.addEventListener('keydown',(e)=>{
+        console.log(e.key);
         if(isPlaying === true){
             return;
         }
-
-        isPlaying = true;
-        startTime = Date.now();
-        setWord();
+        if(e.key === 'Enter'){
+            isPlaying = true;
+            startTime = Date.now();
+            setWord();
+        }
     })
 
 
