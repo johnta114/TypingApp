@@ -11,7 +11,10 @@
     const words = [
         'red',
         'blue',
-        'pink'
+        'pink',
+        'green',
+        'black',
+        'white',
     ];
     let word;
     let loc = 0;
